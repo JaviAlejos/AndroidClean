@@ -5,6 +5,6 @@ export default styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FFFD7A'
+        backgroundColor: '#FF0080'
     }
 });

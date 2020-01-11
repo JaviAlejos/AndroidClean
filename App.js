@@ -1,10 +1,9 @@
 import React from 'react';
-import {View } from 'react-native';
-import { Main } from './app/components/main';
+import Main from './config/routes';
 
 export default function App() {
   return (
-      <Main/>
+        <Main />
       );
 }
 
