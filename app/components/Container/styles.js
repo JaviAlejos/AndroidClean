@@ -1,4 +1,4 @@
-/*import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default styles = StyleSheet.create({
     container: {
@@ -7,4 +7,4 @@ export default styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#FF0080'
     }
-});*/
+});
