@@ -6,20 +6,19 @@ import {Button} from 'react-native';
 export default class ScanButton extends React.Component  {
   constructor(props) {
     super(props);
+    this._handleScanButton=this._handleScanButton.bind(this);
   }
 
-  _handleScanButton(props){
+  _handleScanButton(){
     console.log('Scan');
-    console.log(props);
-    const {onPress} = props;
-    onPress();
+    this.props.onPress();
   };
   
   render() {
     return (
       <Button
             title="Scan"
-            onPress={()=>this._handleScanButton(this.props)}
+            onPress={this._handleScanButton}
           />
 
     );
