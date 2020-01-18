@@ -4,6 +4,7 @@ import styles from './styles';
 import PropTypes from 'prop-types';
 
 export default class Container extends React.Component {
+
   render() {
       return (
           <View style={styles.container}>

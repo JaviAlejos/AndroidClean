@@ -17,7 +17,7 @@ export default class ScanButton extends React.Component  {
   render() {
     return (
       <Button
-            title="Scan"
+            title={this.props.title}
             onPress={this._handleScanButton}
           />
 
@@ -27,4 +27,5 @@ export default class ScanButton extends React.Component  {
 
 ScanButton.propTypes = {
   onPress: PropTypes.func,
+  title: PropTypes.string,
 };

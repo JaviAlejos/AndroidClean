@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScanButton } from '../app/components/Button';
+import { Button } from '../app/components/Button';
 import { Container } from '../app/components/Container';
 
 
@@ -19,7 +19,7 @@ _handleScanButtonOnPress(){
     render() {
         return (
             <Container>
-                <ScanButton onPress={ this._handleScanButtonOnPress}/>
+                <Button onPress={ this._handleScanButtonOnPress} title={"Scan"}/>
             </Container>
         );
     }
