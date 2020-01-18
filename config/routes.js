@@ -4,9 +4,10 @@ import Home from '../screens/Home';
 import FilesList from '../screens/FilesList';
 
 const Main = createStackNavigator(
-    {Home, FilesList},
+    {Home, FilesList}, //our screens
     {
-        /* The header config from HomeScreen is now here */
+        /* We don't want header, 
+        so the header config from screens is false */
         defaultNavigationOptions: {
             headerShown: false 
         }

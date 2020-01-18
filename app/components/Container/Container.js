@@ -3,6 +3,7 @@ import {View } from 'react-native';
 import styles from './styles';
 import PropTypes from 'prop-types';
 
+//Main container of the app
 export default class Container extends React.Component {
 
   render() {

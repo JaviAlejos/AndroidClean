@@ -4,9 +4,8 @@ import {View,FlatList} from 'react-native';
 // SectionList -> https://facebook.github.io/react-native/docs/using-a-listview
 
 import styles from './styles';
-import { Container } from '../Container';
 
-
+// List of items (Files) candidates to be deleted
 export default class ListArea extends React.Component {
   
     render() {
@@ -21,8 +20,4 @@ export default class ListArea extends React.Component {
   ListArea.propTypes = {
     data: PropTypes.array,
     renderItem: PropTypes.func
-  };
-
-  Container.propTypes = {
-    children: PropTypes.any,
   };
