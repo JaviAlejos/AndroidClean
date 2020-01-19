@@ -13,5 +13,9 @@ export default styles = StyleSheet.create({
         width: imageWidth,
         height: imageheight,
         marginBottom: (height-imageheight)/4
+    },
+    separator: {
+        backgroundColor: '#000000',
+        height: StyleSheet.hairlineWidth,
     }
 });
