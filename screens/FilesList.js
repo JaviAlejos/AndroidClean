@@ -12,7 +12,7 @@ export default class FilesList extends React.Component {
         return (
             <Container>
                 <ListArea sections={sections}/>
-                    <Button title={"Delete"}></Button>
+                <Button title={"Delete"}></Button>
             </Container>
         );
     }

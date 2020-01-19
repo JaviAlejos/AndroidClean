@@ -12,7 +12,7 @@ export default class ListArea extends React.Component {
       return (
             <View style={styles.container}>
                 <SectionList sections={this.props.sections} 
-                              renderItem={({item}) => <Text>{item}</Text>}
+                              renderItem={({item}) => <Text style={styles.text}>{item}</Text>}
                               renderSectionHeader={({section}) => <Text>{section.title}</Text>}
                               keyExtractor={(item, index) => index}
                               ItemSeparatorComponent={Separator}

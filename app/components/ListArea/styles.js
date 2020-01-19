@@ -9,13 +9,18 @@ const imageheight = (height/4)*3;
 export default styles = StyleSheet.create({
     container: {
         alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#FFFFFF',
         width: imageWidth,
         height: imageheight,
         marginBottom: (height-imageheight)/4
     },
     separator: {
-        backgroundColor: '#000000',
-        height: StyleSheet.hairlineWidth,
+        borderBottomColor: 'black',
+        borderBottomWidth: 1,
+        width: imageWidth,
+    },
+    text:{
+        marginLeft:width/5
     }
 });
