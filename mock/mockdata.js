@@ -1,5 +1,5 @@
 const sections=[
-    {title:'Instagram',
+    {title:'instagram',
      data: ['File Example 1',
             'File Example 2',
             'File Example 3',
@@ -12,7 +12,7 @@ const sections=[
             'File Example 10'
         ]
     },
-    {title:'Whatsapp',
+    {title:'whatsapp',
      data:['File Example 11',
             'File Example 12',
             'File Example 13',

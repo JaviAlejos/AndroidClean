@@ -7,13 +7,18 @@ const imageWidth =  (width/4)*3;
 const imageheight = (height/4)*3;
 
 export default styles = StyleSheet.create({
+    item:{
+        height:imageheight/20,
+    },
     container: {
+        flex:7,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#FFFFFF',
-        width: imageWidth,
-        height: imageheight,
-        marginBottom: (height-imageheight)/4
+        marginTop:(height-imageheight)/4,
+        borderRadius: 4,
+        borderWidth: 4,
+        borderColor: '#d6d7da',
     },
     separator: {
         borderBottomColor: 'black',
@@ -21,6 +26,10 @@ export default styles = StyleSheet.create({
         width: imageWidth,
     },
     text:{
-        marginLeft:width/5
+        fontSize: 24,
+        color: '#FF0080',
+    },
+    header:{
+        textAlign: 'center', // <-- the magic 
     }
 });
