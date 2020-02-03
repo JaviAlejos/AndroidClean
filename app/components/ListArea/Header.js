@@ -13,24 +13,14 @@ export default class Header extends React.Component  {
   //logo-whatsapp
   render() {
     let {icon}=this.props;
-    let color="";
-    if (icon=="whatsapp"){
-      color="green";
-    }
-      else
-      if (icon=="instagram")
-        color="#FF0080";
-
-      let textStyle= [styles.text,{color}];
-
     return (
             <Text style={styles.header}>
               <Text>
-                <Ionicons name={`logo-${this.props.icon}`} size={styles.item.height} color={color} style={{marginRight: 30}}/> 
+                <Ionicons name={`logo-${this.props.icon}`} size={styles.item.height} color="white" style={{marginRight: 30}}/> 
               </Text>
               <Text>   </Text>
-              <Text style={textStyle}>
-                {this.props.icon}
+              <Text style={styles.text}>
+                {this.props.icon.toUpperCase()}
               </Text>
             </Text>
       

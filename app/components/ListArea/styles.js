@@ -27,7 +27,8 @@ export default styles = StyleSheet.create({
     },
     text:{
         fontSize: 24,
-        color: '#FF0080',
+        color: '#FFFFFF',
+        fontFamily: 'sans-serif-medium',
     },
     header:{
         textAlign: 'center', // <-- the magic 

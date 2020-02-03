@@ -9,13 +9,27 @@ import Header from './Header';
 // List of items (Files) candidates to be deleted
 export default class ListArea extends React.Component {
 
+getBorderColor(icon){
+  let color="";
+  if (icon=="whatsapp"){
+    color="green";
+  }
+else
+if (icon=="instagram")
+  color="#FF0080";
+
+return {backgroundColor:color};
+
+}
+
+
     render() {
       return (
             <View style={styles.container}>
                 <SectionList styles={styles.sectionlist}
                               sections={this.props.sections} 
                               renderItem={({item}) => <View style={styles.item}><Text>{item}</Text></View>}
-                              renderSectionHeader={({section}) => <Header icon={section.title}/>}
+                              renderSectionHeader={({section}) =><View style={this.getBorderColor(section.title)}><Header icon={section.title}/></View>}
                               keyExtractor={(item, index) => index}
                               SectionSeparatorComponent={Separator}
                               />
