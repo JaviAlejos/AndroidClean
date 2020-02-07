@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {View,Text, SectionList} from 'react-native';
+import {View, SectionList} from 'react-native';
 
 import styles from './styles';
 import Separator from './Separator';
 import Header from './Header';
+import Item from './Item';
+
 
 // List of items (Files) candidates to be deleted
 export default class ListArea extends React.Component {
@@ -28,7 +30,7 @@ return {backgroundColor:color};
             <View style={styles.container}>
                 <SectionList styles={styles.sectionlist}
                               sections={this.props.sections} 
-                              renderItem={({item}) => <View style={styles.item}><Text>{item}</Text></View>}
+                              renderItem={({item}) => <Item text={item}/>}
                               renderSectionHeader={({section}) =><View style={this.getBorderColor(section.title)}><Header icon={section.title}/></View>}
                               keyExtractor={(item, index) => index}
                               SectionSeparatorComponent={Separator}

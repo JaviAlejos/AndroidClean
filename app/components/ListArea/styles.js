@@ -9,6 +9,7 @@ const imageheight = (height/4)*3;
 export default styles = StyleSheet.create({
     item:{
         height:imageheight/20,
+        fontSize: 18,
     },
     container: {
         flex:7,
